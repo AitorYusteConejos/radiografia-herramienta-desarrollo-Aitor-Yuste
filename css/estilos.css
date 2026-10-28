@@ -107,6 +107,33 @@ header nav ul li a:hover {
   margin-bottom: 1rem;
 }
 
+.lista-animes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+.lista-animes h1 {
+  width: 100%;
+  text-align: center;
+  color: #6c4ab6;
+}
+.lista-animes .anime {
+  width: 30%;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.lista-animes .anime h3 {
+  color: #6c4ab6;
+  margin-bottom: 0.5rem;
+}
+.lista-animes .anime p {
+  margin-bottom: 1rem;
+}
+
 .top-animes {
   text-align: center;
   padding: 4rem 5%;

@@ -156,6 +156,38 @@ header {
     }
 }
 
+.lista-animes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+
+    max-width: 1000px;
+    margin: auto;
+
+    h1 {
+    width: 100%;
+    text-align: center;
+    color: $color-principal;
+}
+
+    .anime {
+        width: 30%;
+        background-color: white;
+        padding: 1rem;
+        border-radius: 10px;
+
+        h3 {
+            color: $color-principal;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
 .top-animes {
     text-align: center;
     padding: 4rem 5%;
