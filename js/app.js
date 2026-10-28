@@ -1,6 +1,7 @@
 const anterior = document.querySelector(".anterior");
 const siguiente = document.querySelector(".siguiente");
 const slides = document.querySelectorAll(".slide");
+const mensajeCarrusel = document.querySelector("#mensaje-carrusel");
 
 let actual = 0;
 
@@ -18,6 +19,13 @@ siguiente.addEventListener("click", function () {
     }
 
     slides[actual].classList.add("activo");
+    
+
+    mensajeCarrusel.textContent = `pulsado siguiente. Actual: ${actual}`;
+});
+
+
+siguiente.addEventListener("click", function () {
     console.log("pulsado siguiente");
 });
 
@@ -31,5 +39,10 @@ anterior.addEventListener("click", function () {
     }
 
     slides[actual].classList.add("activo");
+    
+    mensajeCarrusel.textContent = `pulsado anterior. Actual: ${actual}`;
+});
+
+anterior.addEventListener("click", function () {
     console.log("pulsado anterior");
 });

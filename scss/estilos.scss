@@ -148,6 +148,12 @@ header {
             right: 15px;
         }
     }
+
+    #mensaje-carrusel {
+        font-weight: bold;
+        color: $color-principal;
+        margin-bottom: 1rem;
+    }
 }
 
 .top-animes {

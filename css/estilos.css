@@ -101,6 +101,11 @@ header nav ul li a:hover {
 .carrusel button.siguiente {
   right: 15px;
 }
+.carrusel #mensaje-carrusel {
+  font-weight: bold;
+  color: #6c4ab6;
+  margin-bottom: 1rem;
+}
 
 .top-animes {
   text-align: center;
@@ -148,33 +153,6 @@ header nav ul li a:hover {
 .categoria a:hover {
   background-color: #6c4ab6;
   color: white;
-}
-
-.juego {
-  text-align: center;
-  padding: 4rem 5%;
-  background-color: #29243a;
-  color: white;
-}
-.juego h2 {
-  color: #ffd95a;
-  margin-bottom: 1rem;
-}
-.juego p {
-  margin-bottom: 2rem;
-}
-.juego a {
-  display: inline-block;
-  background-color: #6c4ab6;
-  color: white;
-  padding: 0.8rem 1.5rem;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-}
-.juego a:hover {
-  background-color: #ffd95a;
-  color: #29243a;
 }
 
 footer {
