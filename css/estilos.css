@@ -120,6 +120,22 @@ header nav ul li a:hover {
   text-align: center;
   color: #6c4ab6;
 }
+.lista-animes .buscador {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.lista-animes .buscador label {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+.lista-animes .buscador input {
+  padding: 0.5rem;
+  width: 50%;
+  max-width: 300px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
 .lista-animes .anime {
   width: 30%;
   background-color: white;
@@ -182,6 +198,10 @@ header nav ul li a:hover {
   color: white;
 }
 
+.d-none {
+  display: none;
+}
+
 footer {
   background-color: #1e1b28;
   color: white;
@@ -199,9 +219,6 @@ footer #boton-info {
   padding: 0.5rem 1rem;
   background-color: #6c4ab6;
   color: white;
-}
-footer .d-none {
-  display: none;
 }
 
 @media (max-width: 700px) {

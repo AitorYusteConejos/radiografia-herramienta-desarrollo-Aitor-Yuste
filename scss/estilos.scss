@@ -169,7 +169,26 @@ header {
     width: 100%;
     text-align: center;
     color: $color-principal;
-}
+    }
+
+    .buscador {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+
+        label {
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        input {
+            padding: 0.5rem;
+            width: 50%;
+            max-width: 300px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+    }
 
     .anime {
         width: 30%;
@@ -251,6 +270,10 @@ header {
     }
 }
 
+ .d-none {
+        display: none;
+    }
+
 footer {
     background-color: #1e1b28;
 
@@ -274,9 +297,6 @@ footer {
        color: white;
     }
 
-    .d-none {
-        display: none;
-    }
 }
 
 

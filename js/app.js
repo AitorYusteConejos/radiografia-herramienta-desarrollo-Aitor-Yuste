@@ -7,7 +7,11 @@ const infoPagina = document.querySelector("#info-pagina");
 
 
 import { animes } from "./datos.js";
+
 const listaAnimes = document.querySelector(".lista-animes");
+
+const buscarAnime = document.querySelector("#buscar-anime");
+
 
 let actual = 0;
 
@@ -76,3 +80,17 @@ for (const anime of animes) {
 
     listaAnimes.appendChild(animeDiv);
 }
+
+const tarjetas = document.querySelectorAll(".anime");
+
+buscarAnime.addEventListener("input", function () {
+    const filtro = buscarAnime.value.toLowerCase().trim();
+
+    tarjetas.forEach(function (tarjeta, indice) {
+
+        const anime = animes[indice];
+
+        const coincide = anime.nombre.toLowerCase().includes(filtro) || anime.categoria.toLowerCase().includes(filtro);
+        tarjeta.classList.toggle("d-none", !coincide);
+    });
+});
