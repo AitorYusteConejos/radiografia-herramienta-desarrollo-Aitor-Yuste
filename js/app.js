@@ -84,6 +84,7 @@ for (const anime of animes) {
 const tarjetas = document.querySelectorAll(".anime");
 
 buscarAnime.addEventListener("input", function () {
+    
     const filtro = buscarAnime.value.toLowerCase().trim();
 
     tarjetas.forEach(function (tarjeta, indice) {
