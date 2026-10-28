@@ -1,0 +1,207 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f4f1ff;
+  color: #29243a;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  background-color: #29243a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 4%;
+}
+header h1 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+}
+header h1 span {
+  color: #ffd95a;
+}
+header nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+header nav ul li a:hover {
+  color: #ffd95a;
+}
+
+.presentacion {
+  text-align: center;
+  padding: 3rem 5%;
+}
+.presentacion .presentacion-texto h2 {
+  color: #6c4ab6;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+.presentacion .presentacion-texto p {
+  margin-bottom: 2rem;
+}
+
+.carrusel {
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.carrusel .slide {
+  display: none;
+}
+.carrusel .slide.activo {
+  display: block;
+}
+.carrusel .slide img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.carrusel .slide h3 {
+  color: #6c4ab6;
+  font-size: 1.8rem;
+  margin: 1rem;
+}
+.carrusel .slide p {
+  margin: 0 1rem 1.5rem;
+}
+.carrusel button {
+  position: absolute;
+  top: 40%;
+  background-color: #6c4ab6;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.carrusel button:hover {
+  background-color: #29243a;
+}
+.carrusel button.anterior {
+  left: 15px;
+}
+.carrusel button.siguiente {
+  right: 15px;
+}
+
+.top-animes {
+  text-align: center;
+  padding: 4rem 5%;
+}
+.top-animes h2 {
+  color: #6c4ab6;
+  margin-bottom: 1rem;
+}
+.top-animes p {
+  margin-bottom: 2rem;
+}
+
+.categorias {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.categoria {
+  width: 30%;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  border-top: 5px solid #6c4ab6;
+}
+.categoria h3 {
+  color: #6c4ab6;
+  margin-bottom: 1rem;
+}
+.categoria p {
+  margin-bottom: 1.5rem;
+}
+.categoria a {
+  display: inline-block;
+  background-color: #ffd95a;
+  color: #29243a;
+  padding: 0.7rem 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.categoria a:hover {
+  background-color: #6c4ab6;
+  color: white;
+}
+
+.juego {
+  text-align: center;
+  padding: 4rem 5%;
+  background-color: #29243a;
+  color: white;
+}
+.juego h2 {
+  color: #ffd95a;
+  margin-bottom: 1rem;
+}
+.juego p {
+  margin-bottom: 2rem;
+}
+.juego a {
+  display: inline-block;
+  background-color: #6c4ab6;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.juego a:hover {
+  background-color: #ffd95a;
+  color: #29243a;
+}
+
+footer {
+  background-color: #1e1b28;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  header nav ul {
+    gap: 1rem;
+  }
+  .categorias {
+    flex-direction: column;
+    align-items: center;
+  }
+  .categoria {
+    width: 90%;
+  }
+  .carrusel .slide img {
+    height: 250px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
