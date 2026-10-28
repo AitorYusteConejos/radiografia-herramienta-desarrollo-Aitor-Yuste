@@ -227,6 +227,24 @@ footer {
     text-align: center;
 
     padding: 1.5rem;
+
+    #info-pagina {
+        margin-top: 1rem;
+        font-size: 0.9rem;
+        color: #ccc;
+    }
+
+    #boton-info{
+       margin-top: 1rem;
+       border-radius: 15px;
+       padding: 0.5rem 1rem;
+       background-color: $color-principal;
+       color: white;
+    }
+
+    .d-none {
+        display: none;
+    }
 }
 
 

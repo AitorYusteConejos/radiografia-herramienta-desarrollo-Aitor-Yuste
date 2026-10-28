@@ -2,6 +2,8 @@ const anterior = document.querySelector(".anterior");
 const siguiente = document.querySelector(".siguiente");
 const slides = document.querySelectorAll(".slide");
 const mensajeCarrusel = document.querySelector("#mensaje-carrusel");
+const botonInfo = document.querySelector("#boton-info");
+const infoPagina = document.querySelector("#info-pagina");
 
 let actual = 0;
 
@@ -46,3 +48,8 @@ anterior.addEventListener("click", function () {
 anterior.addEventListener("click", function () {
     console.log("pulsado anterior");
 });
+
+botonInfo.addEventListener("click", function () {
+    infoPagina.classList.toggle("d-none");
+})
+

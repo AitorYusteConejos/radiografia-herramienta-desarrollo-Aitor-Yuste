@@ -161,6 +161,21 @@ footer {
   text-align: center;
   padding: 1.5rem;
 }
+footer #info-pagina {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+footer #boton-info {
+  margin-top: 1rem;
+  border-radius: 15px;
+  padding: 0.5rem 1rem;
+  background-color: #6c4ab6;
+  color: white;
+}
+footer .d-none {
+  display: none;
+}
 
 @media (max-width: 700px) {
   header {
